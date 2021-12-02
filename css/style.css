@@ -211,8 +211,39 @@ p
     flex: 60vw;
     height: 100%;
     background: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.slides .wrapper
+{
+    width: 30rem;
+    height: 60rem;
+    background: url(../images/img-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 10%;
+    bottom: 2rem;
+}
+
+.slides .wrapper .slides__photo
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.slides .wrapper .slides__photo.active 
+{
+    opacity: 1;
+}
 
 
 
