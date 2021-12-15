@@ -258,10 +258,16 @@ p
 /* Media Querie */
 
 @media (max-width: 1020px) {
+
+    .content 
+    {
+        flex: 60vw;
+    }
+
     .slides .wrapper
     {
         width: 30rem;
-        height: 60rem;
+        height: 55rem;
         top: .2rem;
         left: 1rem;
     }
@@ -273,10 +279,12 @@ p
         position: absolute;
         top: 0;
         left: 0;
+        object-fit: contain;
     }
+
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     .slides
     {
         display: none;
