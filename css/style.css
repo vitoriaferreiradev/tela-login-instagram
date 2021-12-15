@@ -151,7 +151,13 @@ p
     color: var(--gray);
 }
 
-.content .wrapper .cadastro .inputBox
+.content .wrapper .cadastro
+{
+    display: none;
+}
+
+.content .wrapper .cadastro .inputBox,
+.content .wrapper .login .inputBox
 {
     padding: 0 1rem;
     margin: auto;
@@ -159,7 +165,8 @@ p
     margin-bottom: 1rem;
 }
 
-.content .wrapper .cadastro .inputBox .input
+.content .wrapper .cadastro .inputBox .input,
+.content .wrapper .login .inputBox .input
 {
     width: 100%;
     height: 100%;
@@ -172,18 +179,21 @@ p
     color: var(--black);
 }
 
-.content .wrapper .cadastro .inputBox .input::placeholder
+.content .wrapper .cadastro .inputBox .input::placeholder,
+.content .wrapper .login .inputBox .input::placeholder
 {
     font-size: 1.4rem;
     color: var(--black);
 }
 
-.content .wrapper .cadastro .inputBox .input:focus
+.content .wrapper .cadastro .inputBox .input:focus,
+.content .wrapper .login .inputBox .input:focus
 {
     border: 2px solid #d62977b0;
 }
 
-.content .wrapper .cadastro .inputBox:last-of-type
+.content .wrapper .cadastro .inputBox:last-of-type,
+.content .wrapper .login .inputBox:last-of-type
 {
     margin-bottom: 1.5rem;
 }
@@ -245,6 +255,44 @@ p
     opacity: 1;
 }
 
+/* Media Querie */
 
+@media (max-width: 1020px) {
+    .slides .wrapper
+    {
+        width: 30rem;
+        height: 60rem;
+        top: .2rem;
+        left: 1rem;
+    }
+
+    .slides .wrapper .slides__photo
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .slides
+    {
+        display: none;
+    }
+
+    .content 
+    {
+        background: linear-gradient(to bottom left,#fed975d3,#d62977d7,#962fbfd3,#4f5ad5e7);
+    }
+
+    .content .wrapper
+    {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: .5rem;
+    }
+}
 
 
